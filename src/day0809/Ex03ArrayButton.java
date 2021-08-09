@@ -41,12 +41,12 @@ public class Ex03ArrayButton extends JFrame{
 		}
 		
 	}
-	
+	//내부클래스
 	class MyButton implements ActionListener{ //MyButton에서 자동 오버라이드 만들기
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			Object ob = e.getSource(); //이벤트가 발생한 버튼
+			Object ob = e.getSource(); //이벤트가 발생한 버튼의 위치값을 반환. 버튼이 여러개일 때 자주 쓰임
 			for(int i = 0; i<btn.length;i++) {
 				if(ob==btn[i]){
 					Ex03ArrayButton.this.getContentPane().setBackground(colors[i]);

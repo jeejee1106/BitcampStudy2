@@ -63,7 +63,7 @@ public class EX01SwingButton extends JFrame implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		Object ob = e.getSource(); //이벤트가 발생한 오브젝트
+		Object ob = e.getSource(); //이벤트가 발생한 버튼의 위치값 반환
 //		JButton ob = (JButton)e.getSource();// 버튼으로 형변환 해도됌
 		if(ob==btn1) {
 			JOptionPane.showMessageDialog(this,  "버튼1번 Hello를 클릭했어요");

@@ -4,7 +4,6 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Scanner;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -13,7 +12,6 @@ import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
 
 public class Ex05Practice extends JFrame{
-	Scanner sc = new Scanner(System.in);
 	JTextField text1, text2;
 	JButton btn1;
 	JLabel label1, label2, label3;
@@ -49,14 +47,14 @@ public class Ex05Practice extends JFrame{
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				try {
 				int num1 = Integer.parseInt(text1.getText());
 				int num2 = Integer.parseInt(text2.getText());
 				int result = num1+num2;
 				
-				try {
 				label3.setText(num1 + "+" + num2 + "=" + result);
 				} catch(NumberFormatException e2) {
-					System.out.println("문자가 섞여있어여.");
+					label3.setText("문자가 섞여있어여.");
 				}
 			}
 		});
@@ -73,7 +71,7 @@ public class Ex05Practice extends JFrame{
 		
 		
 		label3 = new JLabel();
-		label3.setBounds(10, 250, 130, 50);
+		label3.setBounds(10, 250, 230, 50);
 		label3.setBorder(new TitledBorder("결과확인"));
 		label3.setOpaque(true);
 		label3.setFont(font1);

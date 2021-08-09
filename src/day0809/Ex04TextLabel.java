@@ -12,10 +12,10 @@ import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
 import javax.swing.border.TitledBorder;
 
-public class Ex04TextLabel extends JFrame{
-	JTextField text1, text2; //1.JTextField 임포트 넣기
-	JLabel label1, label2, label3, label4, label5;// 2.JLable 임포트 넣기
-	Icon icon1 = new ImageIcon("C:\\Users\\PC\\Desktop\\study\\image\\01.png"); //3. Icon, ImageIcon 임포트 넣기
+public class Ex04TextLabel extends JFrame{ //1.JFrame 상속 받으면서 임포트넣기
+	JTextField text1, text2; //2.JTextField 임포트 넣기
+	JLabel label1, label2, label3, label4, label5;// 3.JLable 임포트 넣기
+	Icon icon1 = new ImageIcon("C:\\Users\\PC\\Desktop\\study\\image\\01.png"); //4. Icon, ImageIcon 임포트 넣기
 	Icon icon2 = new ImageIcon("C:\\Users\\PC\\Desktop\\study\\image\\02.png");
 	
 	public Ex04TextLabel(String title) {
