@@ -71,8 +71,8 @@ public class Ex02CheckBox extends JFrame implements ItemListener, ActionListener
 	@Override
 	public void itemStateChanged(ItemEvent e) {
 		Object ob = e.getSource();
-		if(ob==cbDriver) {
-			String s = "체크상태" + cbDriver.isSelected() + "텍스트:" + cbDriver.getText();
+		if(ob==cbDriver) {			//isSelected()는 true, false값을 반환하는 메소드. 체크하면 true, 체크해제하면 false
+			String s = "체크상태" + cbDriver.isSelected() + "텍스트:" + cbDriver.getText(); //cdDriver의 텍스트를 가져오겠다.불러오겠다.
 			lblResult.setText(s);
 		} else if(ob==cbBold) {
 			if(cbBold.isSelected()){
@@ -93,10 +93,10 @@ public class Ex02CheckBox extends JFrame implements ItemListener, ActionListener
 			for(int i = 0; i<cbHobby.length; i++) {
 				if(cbHobby[i].isSelected()) {
 					select++;
-					s+="[" +cbHobby[i] + "]";
+					s+="[" +cbHobby[i].getText() + "]";
 				}
 			}
-//			for(JCheckBox cb : cbHobby) {
+//			for(JCheckBox cb : cbHobby) { //향상된 for문으로도 해봤다.
 //				if(cb.isSelected()) {
 //					select++;
 //					s+="[" +cb.getText() + "]";
