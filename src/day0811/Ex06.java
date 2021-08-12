@@ -11,7 +11,7 @@ import java.awt.event.ItemListener;
 import javax.swing.ImageIcon;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
-
+//Ex05 문제에 대한 강사님 코드
 public class Ex06 extends JFrame {
 
 	JComboBox<String> box;
