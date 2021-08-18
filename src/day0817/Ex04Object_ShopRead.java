@@ -15,7 +15,8 @@ public class Ex04Object_ShopRead {
 		ObjectInputStream ois = null;
 		
 		try {
-			fis = new FileInputStream("C:\\Users\\PC\\Desktop\\study\\shop0817.txt");
+//			fis = new FileInputStream("C:\\Users\\PC\\Desktop\\study\\shop0817.txt");
+			fis = new FileInputStream("D:\\bitjava0719\\javawork\\shop0817.txt");
 			ois = new ObjectInputStream(fis);
 			list = (ArrayList<Shop>)ois.readObject();
 			

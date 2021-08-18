@@ -5,7 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
-
+//직렬화?? Object를 통채로 파일에 저장하는 것을 말한다.
 //직렬화를 위한 클래스
 class Apple implements Serializable{ //직렬화를 위해서는 Serializable인터페이스를 을 반드시 구현해줘야함
 	String name;
@@ -32,7 +32,7 @@ public class Ex01ObjectFile {
 		try {
 			fs = new FileOutputStream("C:\\Users\\PC\\Desktop\\study\\wlrfufghk.txt");
 			ob = new ObjectOutputStream(fs);
-			//객체저장
+			//파일에 오브젝트 통채로 저장
 			ob.writeObject(a1);
 			System.out.println("wlrfufghk.txt 파일에 저장됨");
 		} catch (FileNotFoundException e) {
