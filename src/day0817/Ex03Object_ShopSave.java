@@ -32,8 +32,8 @@ public class Ex03Object_ShopSave {
 		ObjectOutputStream oos = null; //직렬화 코드
 		
 		try {
-//			fos = new FileOutputStream("C:\\Users\\PC\\Desktop\\study\\shop0817.txt");
-			fos = new FileOutputStream("D:\\bitjava0719\\javawork\\shop0817.txt");
+			fos = new FileOutputStream("C:\\Users\\PC\\Desktop\\study\\shop0817.txt");
+//			fos = new FileOutputStream("D:\\bitjava0719\\javawork\\shop0817.txt");
 			oos = new ObjectOutputStream(fos);
 			//파일에 오브젝트 통채로 저장
 			oos.writeObject(list);

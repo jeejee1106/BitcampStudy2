@@ -3,15 +3,16 @@ package day0818;
 import java.io.Serializable;
 
 public class Sawon implements Serializable {
-	String name;
-	int hp;
-	String addr;
+	private String name;
+	private int hp;
+	private String addr;
 	
 	public Sawon() {
 		
 	}
 	
 	public Sawon(String name, int hp, String addr) {
+		super();
 		this.name = name;
 		this.hp = hp;
 		this.addr = addr;
