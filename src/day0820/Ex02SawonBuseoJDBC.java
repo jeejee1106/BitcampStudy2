@@ -29,6 +29,8 @@ public class Ex02SawonBuseoJDBC {
 			System.out.println("oracle sql developer와 연결됨!!");
 			
 			stmt = conn.createStatement(); //conn에 있는 SQL문을 받아서(createStatement) stmt에 넣겠다. stmt는 SQL문을 실행할거임.
+			
+			//select는 ResultSet이 필요하므로 무조건 executeQuery
 			rs = stmt.executeQuery(sql); //Query로 sql문을 실행하여 ResultSet개체인 rs를 반환. rs데이터 테이블에 데이터를 넣겠다.(넣는건 밑에 while문으로)
 			//여기까지가 oracle sql developer를 연동해 데이터를 불러오는 코드였음.
 			//밑에는 불러온 데이터를 출력하는 코드!!!!!
