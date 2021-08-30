@@ -15,7 +15,7 @@ public class Ex05Practice extends JFrame{
 	JTextField text1, text2;
 	JButton btn1;
 	JLabel label1, label2, label3;
-	Font font1 = new Font(null, 0, 20);
+	Font font1 = new Font("고딕", Font.BOLD, 20); //글씨체, 효과(진하게, 기울기), 크기
 	
 	public Ex05Practice(String title) {
 		super(title);
